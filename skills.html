@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Skills</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -16,16 +16,90 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <style>
+            body {
+              background-color: #9ac19a;
+              color: #003300;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+          
+            .skills-section {
+              background-color: #2e7d32; /* Darker green */
+              border: 3px solid #1b5e20;
+            }
+          
+            .skills-section h2 {
+              color: #c8e6c9; /* Lighter green */
+              font-weight: bold;
+            }
+          
+            .skills-section ul li {
+              margin-bottom: 10px;
+            }
+          
+            .navbar {
+              background-color: #025202;
+            }
+          
+            .navbar .nav-link,.navbar-brand {
+              color: #ffffff;
+            }
+          
+            .navbar .nav-link.active {
+              font-weight: bold;
+              text-decoration: underline;
+            }
+          
+            footer {
+              background-color: #014401;
+              color: white;
+            }
+          </style>
+          
     </head>
 
     <body>
-        
-        <div class="container mt-5 p-5 shadow bg-light rounded-5">
-            <h3> Default conntainer</h3>
-            <h4> This container is always center, notice the equal</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias neque consequuntur aliquid dolorum totam voluptas veritatis sit ipsam nam! Magni nobis nesciunt non tenetur! Sit, accusantium facere doloremque vero labore fugit omnis tempora explicabo illo nobis temporibus provident hic iusto autem saepe quasi et iure, doloribus maxime quam harum ea.</p>
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="components.html">About me</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="interests.html" class="nav-link active fs-5">Interests</a></li>
+              <li class="nav-item"><a href="projects.html" class="nav-link fs-5" >Projects</a></li>
+              <li class="nav-item"><a href="skills.html" class="nav-link fs-5">Skills</a></li>
+            </ul>
+          </div>
         </div>
-        
+      </nav>
+
+     <div class="container mt-5 p-5 shadow rounded-5 text-white skills-section">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <p class="fs-5">
+          As a passionate IT student from National University - Lipa, I’ve been consistently learning and improving my technical and creative skills. Below is a summary of what I can do so far:
+        </p>
+        <ul class="fs-5">
+          <li><strong>Web Development:</strong> Proficient in HTML and CSS. Currently learning JavaScript to build more interactive web pages.</li>
+          <li><strong>Programming:</strong> Experienced with Java and C++ for console-based applications, including data structures and algorithm-related projects.</li>
+          <li><strong>Database Management:</strong> Knowledgeable in SQL and PHP for back-end development and handling database-driven systems.</li>
+          <li><strong>Android Development:</strong> Familiar with Android Studio using Java. Built simple apps like “NU Finds” with full functionality.</li>
+          <li><strong>Version Control:</strong> Basic understanding of Git for managing code and collaborating on projects.</li>
+          <li><strong>Soft Skills:</strong> Team player, eager to learn, adaptable, and committed to growth as a future IT professional.</li>
+        </ul>
+        <p class="fs-5 mt-4">
+          I'm continuously exploring new tools, technologies, and best practices to become more effective in both front-end and back-end development.
+        </p>
+      </div>
+      
+          
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

@@ -1,42 +1,128 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+  <head>
+    <title>Interests</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <style>
+      body {
+        background-color: #98b898;
+        color: #003300;
+        font-family: Arial, sans-serif;
+      }
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+      .navbar {
+        background-color: #025202;
+      }
+
+      .navbar .nav-link,
+      .navbar-brand {
+        color: #ffffff !important;
+      }
+
+      .navbar .nav-link.active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      .interest-section {
+        background-color: #2e7d32;
+        border-radius: 20px;
+        padding: 40px;
+        margin-top: 40px;
+        color: white;
+      }
+
+      .card {
+        background-color: #388e3c;
+        border: none;
+        color: white;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card i {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      footer {
+        background-color: #014401;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="components.html">About me</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="interests.html" class="nav-link active fs-5">Interests</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link fs-5">Projects</a></li>
+            <li class="nav-item"><a href="skills.html" class="nav-link fs-5">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Interests -->
+    <div class="container interest-section text-center">
+      <h2 class="mb-5">My Interests</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-4 h-100">
+            <i class="bi bi-controller"></i>
+            <h5 class="card-title">Playing Online Games</h5>
+            <p class="card-text">Gaming helps me unwind and sharpen my strategic thinking. I enjoy multiplayer and role playing games.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-4 h-100">
+            <i class="bi bi-heart-pulse"></i>
+            <h5 class="card-title">Home Workouts</h5>
+            <p class="card-text">I stay active with home workouts like bodyweight routines that help keep me fit and strong.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-4 h-100">
+            <i class="bi bi-globe"></i>
+            <h5 class="card-title">Traveling</h5>
+            <p class="card-text">Although I haven’t traveled much yet, I’m curious about new places, cultures, and unforgettable experiences.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card p-4 h-100">
+            <i class="bi bi-car-front"></i>
+            <h5 class="card-title">Driving Cars</h5>
+            <p class="card-text">I’m interested in learning to drive. Exploring the world behind the wheel is something I’m looking forward to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-3 mt-5">
+      <p class="mb-0">© 2025 Liwanag. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
