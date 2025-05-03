@@ -16,31 +16,81 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <style>
+            :root {
+                --bs-primary: #28a745; /* Bootstrap's green */
+            }
+    
+            .card {
+                border: 1px solid #28a745;
+            }
+    
+            .card-title {
+                color: #28a745;
+            }
+    
+            body {
+                background-color: #255425;
+            }
+        </style>
     </head>
 
     <body>
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="index.html">Interests</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="components.html" class="nav-link active fs-5">About me</a></li>
+              <li class="nav-item"><a href="projects.html" class="nav-link fs-5" >Projects</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link fs-5">Skills</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
         <!--projects-->
         <div id="projects" class="container-fluid">
             <div class="container p-5">
                 <div class="row">
                     <div class="col-md-4 my-3">
                         <div class="card h-100 d-flex flex-column">
-                            <img src="./img/DA.jpg" alt="" class="card-img-top">
+                            <img src="./img/DA.png" alt="" class="card-img-top">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                                <h5 class="card-title">Dog Adoption System</h5>
+                                <p class="card-text flex-grow-1">The Dog Adoption System is a project we developed for our 
+                                    Data Structures and Algorithms course using C++. It is designed to assist both dog shelters 
+                                    and individuals looking to adopt a dog. The system allows users to track dogs currently 
+                                    available for adoption, as well as those that have already been adopted. It also categorizes 
+                                    dogs based on breed and age, making the adoption process more organized and efficient. </p>
+                                <a href="#" class="btn btn-success mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 my-3">
                         <div class="card h-100 d-flex flex-column">
-                            <img src="./img/NF.jpg" alt="" class="card-img-top">
+                            <img src="./img/A.png" alt="" class="card-img-top">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Project 2</h5>
-                                <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                                <h5 class="card-title">NU Finds</h5>
+                                <p class="card-text flex-grow-1">NU Finds is an Android application we developed during our 
+                                    Application Development course using Java, PHP, and SQL. The app is designed to support 
+                                    the students and SDO officers of NU Lipa in fostering a responsible and connected campus 
+                                    community. It enables users to report and track lost items by uploading item details to
+                                     the system. If an item has already been turned in to the Student Discipline Office (SDO),
+                                      it becomes searchable within the app. The system is backed by a structured database that 
+                                      stores essential information such as lost item details, student ID, full name, item description, 
+                                      and the location where it was found. </p>
+                                <a href="#" class="btn btn-success mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +101,7 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Project 3</h5>
                                 <p class="card-text flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                                <a href="#" class="btn btn-success mt-auto">View Project</a>
                             </div>
                         </div>
                     </div>
